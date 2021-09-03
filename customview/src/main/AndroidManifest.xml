@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.xhsj.customview">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/MaterialAppTheme">
+
+        <activity android:name=".StreamingLayout" />
+        <activity android:name=".PropertyActivity" />
+        <activity android:name=".MatrixActivity" />
+        <activity android:name=".eventconflict.MainActivity" />
+        <activity
+            android:name=".eventconflict.nestedscroll.a_scrollview_recyclerview.NestedViewPagerActivityTest1"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".eventconflict.nestedscroll.b_nestedscrollview_recyclerview.NestedViewPagerActivityTest2"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".eventconflict.nestedscroll.c_fixedheight_viewpager_nestedscrollview_recyclerview.NestedViewPagerActivityTest3"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".eventconflict.nestedscroll.e_perfect_nestedscroll.NestedViewPagerActivity"
+            android:screenOrientation="portrait"></activity>
+<!--        <activity android:name=".photoview.MainActivity">-->
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
+
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
+<!--        </activity>-->
+
+        <activity android:name=".webviewapp.WebMainActivity"
+            tools:ignore="DuplicateActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".textdraw.activity.SimpleActivity" />
+        <activity android:name=".recyclerceiling.expand.ExpandMainActivity" />
+        <activity android:name=".recyclerceiling.linear.LinearRecyclerActivity" />
+        <activity android:name=".recyclerceiling.grid.GridRecyclerActivity" />
+        <activity android:name=".textdraw.activity.TextMeasureActivity" />
+        <activity android:name=".textdraw.activity.ViewPagerActivity" />
+        <activity android:name=".textdraw.activity.OverDrawActivity" />
+        <activity android:name=".textdraw.activity.OtherActivity" />
+        <activity
+            android:name=".materialdesign.materialtext.TextInputActivity"
+            android:theme="@style/MaterialAppTheme" />
+        <activity android:name=".materialdesign.materialbutton.MaterialButtonActivity" />
+        <activity android:name=".materialdesign.nestedscroll.activity.NestScrollActivity" />
+        <activity android:name=".materialdesign.z.ZActivity" />
+        <activity
+            android:name=".materialdesign.chips.ChipsActivity"
+            android:theme="@style/MaterialAppTheme" />
+        <activity
+            android:name=".materialdesign.bottomAppBar.BottomAppBarActivity"
+            android:theme="@style/MaterialAppTheme" />
+        <activity
+            android:name=".materialdesign.viewpager2.ViewPager2Activity"
+            android:theme="@style/MaterialAppTheme" />
+        <activity
+            android:name=".materialdesign.coordinator.CoordinatorActivity"
+            android:theme="@style/TranslucentTheme" />
+        <activity
+            android:name=".materialdesign.cardview.CardViewActivity"
+            android:label="CardView" />
+        <activity
+            android:name=".materialdesign.drawer.DrawerLayoutActivity"
+            android:label="@string/title_activity_drawer_layout"
+            android:theme="@style/MaterialAppThemeNoActionBar" />
+        <activity android:name=".materialdesign.bottomsheets.BottomSheetsActivity" />
+        <activity
+            android:name=".materialdesign.tab.TabActivity"
+            android:label="@string/title_activity_tab"
+            android:theme="@style/MaterialAppThemeNoActionBar" />
+        <activity android:name=".materialdesign.floatingactionbutton.FloatActionButtonActivity" />
+        <activity android:name=".materialdesign.snackbar.SnackBarActivity" />
+        <activity
+            android:name=".materialdesign.navigation.CloudMusicActivity"
+            android:theme="@style/TranslucentTheme" />
+        <activity
+            android:name=".materialdesign.translucent.QQMusicActivity"
+            android:theme="@style/TranslucentTheme" />
+        <activity
+            android:name=".materialdesign.toolbar.ToolbarActivity"
+            android:label="ToolBar演示"
+            android:parentActivityName=".MainActivity"
+            android:theme="@style/ToolBarAppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+    </application>
+
+</manifest>
