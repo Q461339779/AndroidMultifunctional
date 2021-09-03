@@ -3,7 +3,10 @@ def config = rootProject.ext.android
 android {
     compileSdkVersion config.compileSdkVersion
     buildToolsVersion config.buildToolsVersion
-
+    compileOptions {
+        sourceCompatibility 1.8
+        targetCompatibility 1.8
+    }
     defaultConfig {
         applicationId "com.xhsj.customview"
         minSdkVersion config.minSdkVersion

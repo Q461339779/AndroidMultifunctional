@@ -9,6 +9,7 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
+        android:name=".webviewapp.XiangxueWebViewApplication"
         android:theme="@style/MaterialAppTheme">
 
         <activity android:name=".StreamingLayout" />

@@ -1,10 +1,12 @@
 apply plugin: 'com.android.library'
-
 def config = rootProject.ext.android
 android {
     compileSdkVersion config.compileSdkVersion
     buildToolsVersion config.buildToolsVersion
-
+    compileOptions {
+        sourceCompatibility 1.8
+        targetCompatibility 1.8
+    }
     defaultConfig {
         minSdkVersion config.minSdkVersion
         targetSdkVersion config.targetSdkVersion
@@ -24,5 +26,8 @@ android {
 
 dependencies {
     implementation 'androidx.appcompat:appcompat:1.2.0'
+    api 'com.kingja.loadsir:loadsir:1.3.6'
+    implementation 'com.airbnb.android:lottie:2.8.0'
+    api 'com.scwang.smartrefresh:SmartRefreshLayout:1.1.0-alpha-7'
 
 }
