@@ -1,4 +1,4 @@
-package com.xiangxue.webview.utils;
+package com.xiangxue.webview;
 
 public class Constants {
     public static final String TITLE = "title";

@@ -1,4 +1,9 @@
 include ':common'
+setBinding(new Binding([gradle: this]))
+evaluate(new File(
+  settingsDir,
+  '../../../xuexi/flutter_douyu/.android/include_flutter.groovy'
+))
 include ':base'
 include ':webview'
 include ':lib'
@@ -18,3 +23,9 @@ include ':multichannelpackaging'
 include ':app'
 include ':skin'
 rootProject.name = "AndroidMultifunctional"
+
+include ':flutter_douyu'
+project(':flutter_douyu').projectDir = new File('../../../xuexi/flutter_douyu')
+
+include ':flutter_douyu'
+project(':flutter_douyu').projectDir = new File('../../../xuexi/flutter_douyu')

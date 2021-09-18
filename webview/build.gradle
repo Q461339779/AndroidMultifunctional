@@ -30,5 +30,6 @@ dependencies {
     implementation 'androidx.appcompat:appcompat:1.2.0'
     annotationProcessor config.googleAutoServiceDependency
     implementation config.googleAutoServiceDependency
+    implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.0.0'
     api project(":common")
 }
